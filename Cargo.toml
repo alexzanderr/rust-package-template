@@ -1,0 +1,60 @@
+
+[package]
+name = "{{ package-name }}"
+version = "0.0.1"
+edition = "2021"
+description = "{{ description }}"
+authors = [ "{{ author-username }} <author-email>" ]
+license = "MIT"
+homepage = "https://github.com/alexzanderr/rust-{{ package-name }}"
+repository = "https://github.com/alexzanderr/rust-{{ package-name }}"
+documentation = "https://docs.rs/{{ package-name }}"
+readme = "README.md"
+keywords = [""]
+
+exclude = ["book/*"]
+
+# use this
+# https://crates.io/category_slugs
+categories = [""]
+
+[dependencies]
+# core dependencies every rust crate should have
+unicode-segmentation = "1.9.0"
+color-backtrace = "0.5.1"
+unindent = "0.1.8"
+
+
+[profile.release]
+# Link-time optimization (LTO) is a whole-program optimization technique that can improve runtime performance by 10-20% or more, at the cost of increased build times. For any individual Rust program it is easy to see if the runtime versus compile-time trade-off is worthwhile.
+# The simplest way to try LTO is to add the following lines to the Cargo.toml file and do a release build.
+lto = true
+# good for performance in release mode
+
+[lib]
+name = "{{ package-name }}"
+
+[dev-dependencies]
+pretty_assertions = "1.1.0"
+doc-comment = "0.3.3"
+rstest = "0.12.0"
+# every rust project should have
+
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+
+
+[workspace]
+
+members = [
+    # to run this workspace
+    # cargo run -p dev-ideas
+    # 
+    # with example
+    # cargo run -p dev-ideas --example something
+    "dev-ideas",
+    ".", # dont need this, because there is [package] with name, above
+]

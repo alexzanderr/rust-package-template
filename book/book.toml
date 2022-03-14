@@ -1,0 +1,8 @@
+
+[book]
+authors = ["{{ author-username }} <author-email>"]
+description = "{{ description }}"
+language = "en"
+multilingual = false
+src = "src"
+title = "{{ book-title }}"

@@ -1,0 +1,29 @@
+name: Publish to Crates.io
+on:
+    push:
+        branches:
+            - main
+        # Pattern matched against refs/tags
+        # tags:
+        # - '*'           # Push events to every tag not containing /
+    # workflow_dispatch:
+
+jobs:
+    publish:
+        name: Publish
+        runs-on: ubuntu-latest
+        steps:
+            - name: git clone
+              uses: actions/checkout@v2
+
+            - name: install nightly rust
+              uses: actions-rs/toolchain@v1
+              with:
+                  profile: minimal
+                  toolchain: nightly
+                  override: true
+
+            # publish
+            - run: cargo publish --token ${CRATES_IO_PUBLISH_TOKEN}
+              env:
+                  CRATES_IO_PUBLISH_TOKEN: ${{ secrets.CRATES_IO_PUBLISH_TOKEN }}
