@@ -14,7 +14,7 @@ use pretty_assertions::assert_eq;
 use rstest::rstest;
 
 // lib crate rust-python-objects
-use {{ package-name}}::*;
+use {{package-name}}::*;
 
 mod common;
 
