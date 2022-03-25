@@ -98,7 +98,7 @@ you can append almost anything
 # References
 see also
 
-- [`List`](https://github.com/alexzanderr/rust-python-objects/blob/main/src/list/list.rs)
+- [`List`](https://github.com/{{author-git-username}}/rust-python-objects/blob/main/src/list/list.rs)
  struct implementation source code
-- [`Append`](https://github.com/alexzanderr/rust-python-objects/blob/main/src/list/append.rs)
+- [`Append`](https://github.com/{{author-git-username}}/rust-python-objects/blob/main/src/list/append.rs)
  trait implementation source code

@@ -7,7 +7,7 @@
 
 2. clone your repo to local
 ```shell
-git clone https://github.com/<your-username>/{{ repo-name }}
+git clone https://github.com/{{ git-username }}/{{ repo-name }}
 ```
 
 3. make your branch

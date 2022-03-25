@@ -1,21 +1,21 @@
 
-![logo](https://github.com/alexzanderr/rust-{{ package-name }}/blob/main/static/img/logo/rust-{{ package-name }}-logo.png?raw=True)
+![logo](https://github.com/{{author-git-username}}/rust-{{package-name}}/blob/main/static/img/logo/rust-{{package-name}}-logo.png?raw=True)
 
 <p align="center">
-    <a href="https://alexzanderr.github.io/rust-{{ package-name }}/book/index.html">
-        <img src="https://github.com/alexzanderr/rust-{{ package-name }}/actions/workflows/deploy_book.yaml/badge.svg" alt="book_deploy">
+    <a href="https://{{author-git-username}}.github.io/rust-{{package-name}}/book/index.html">
+        <img src="https://github.com/{{author-git-username}}/rust-{{package-name}}/actions/workflows/deploy_book.yaml/badge.svg" alt="book_deploy">
     </a>
     <br>
     <a href="">
-        <img src="https://github.com/alexzanderr/rust-{{ package-name }}/actions/workflows/vulnerabilities_audit.yaml/badge.svg" alt="vuln">
+        <img src="https://github.com/{{author-git-username}}/rust-{{package-name}}/actions/workflows/vulnerabilities_audit.yaml/badge.svg" alt="vuln">
     </a>
     <br>
-    <a href="https://crates.io/crates/{{ package-name }}">
-        <img src="https://github.com/alexzanderr/rust-{{ package-name }}/actions/workflows/crates_io_publish.yaml/badge.svg" alt="crates_io_publish">
+    <a href="https://crates.io/crates/{{package-name}}">
+        <img src="https://github.com/{{author-git-username}}/rust-{{package-name}}/actions/workflows/crates_io_publish.yaml/badge.svg" alt="crates_io_publish">
     </a>
     <br>
-    <a href="https://crates.io/crates/{{ package-name }}">
-        <img src="https://img.shields.io/crates/v/{{ package-name }}.svg" alt="Crates.io">
+    <a href="https://crates.io/crates/{{package-name}}">
+        <img src="https://img.shields.io/crates/v/{{package-name}}.svg" alt="Crates.io">
     </a>
     <br>
     <a href="https://choosealicense.com/licenses/mit/" alt="License: MIT">
@@ -50,7 +50,7 @@ first you need to see the showcases to convince you to install it.
 
 just run this command
 ```shell
-cargo add {{ package-name }}
+cargo add {{package-name}}
 ```
 and this will add the `latest version` from `crates.io` to your `Cargo.toml`, just like the old way, but automatically.
 
@@ -62,16 +62,16 @@ and this will add the `latest version` from `crates.io` to your `Cargo.toml`, ju
 
 just copy the `crate name` and the version you want to use:
 ```toml
-{{ package-name }} = "$the_version_you_want"
+{{package-name}} = "$the_version_you_want"
 # example
-{{ package-name }} = "0.0.6"
+{{package-name}} = "0.0.6"
 ```
-to your `Cargo.toml` and then write some code and build your project that uses `{{ package-name }}`.
+to your `Cargo.toml` and then write some code and build your project that uses `{{package-name}}`.
 
 
 # Documentation
-- [`docs.rs/{{ package-name }}`](https://docs.rs/{{ package-name }}/latest/python/)
-- [`the-book`](https://alexzanderr.github.io/rust-{{ package-name }}/book/index.html)
+- [`docs.rs/{{package-name}}`](https://docs.rs/{{package-name}}/latest/python/)
+- [`the-book`](https://{{author-git-username}}.github.io/rust-{{package-name}}/book/index.html)
 
 
 # why ?
@@ -79,26 +79,26 @@ because i can.
 
 
 # TODO
-check [`TODO.md`](https://github.com/alexzanderr/rust-{{ package-name }}/blob/main/TODO.md)
+check [`TODO.md`](https://github.com/{{author-git-username}}/rust-{{package-name}}/blob/main/TODO.md)
 
 
 # Contributing
-check [`CONTRIBUTING.md`](https://github.com/alexzanderr/rust-{{ package-name }}/blob/main/CONTRIBUTING.md
+check [`CONTRIBUTING.md`](https://github.com/{{author-git-username}}/rust-{{package-name}}/blob/main/CONTRIBUTING.md
 )
 
 # Changelog
-check [`CHANGELOG.md`](https://github.com/alexzanderr/rust-{{ package-name }}/blob/main/changelog/CHANGELOG.md)
+check [`CHANGELOG.md`](https://github.com/{{author-git-username}}/rust-{{package-name}}/blob/main/changelog/CHANGELOG.md)
 
-# Crates that use {{ package-name }}
+# Crates that use {{package-name}}
 incoming, would be nice.
 
 # NOTE
 note for the user and developer
 
 if you find `issues` go ahead and make an
-[`issue`](https://github.com/alexzanderr/rust-{{ package-name }}/issues/new)
+[`issue`](https://github.com/{{author-git-username}}/rust-{{package-name}}/issues/new)
 or a
-[`pull request`](https://github.com/alexzanderr/rust-{{ package-name }}/compare),
+[`pull request`](https://github.com/{{author-git-username}}/rust-{{package-name}}/compare),
 cant wait to take a look into them.
 
 
